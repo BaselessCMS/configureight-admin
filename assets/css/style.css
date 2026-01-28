@@ -6333,9 +6333,9 @@ fieldset:disabled a.btn {
 }
 
 .admin-menu {
-  width: 100%;
+  width: max-content;
   max-width: max-content;
-  min-width: min-content;
+  min-width: max-content;
   margin: 0;
   padding: 0 0 1rem 0;
   background-color: var(--cfe-admin-menu--bg-color, #333333);
