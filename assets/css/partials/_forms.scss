@@ -1531,6 +1531,11 @@ p + .multi-check-wrap {
 		}
 	}
 }
+.dark-mode {
+	#form-color-thumbs-list ul li {
+		border: var( --cfe-form-element--border--dark );
+	}
+}
 
 form {
 
@@ -1909,6 +1914,42 @@ select {
 			.fa {
 				margin: 0;
 			}
+		}
+	}
+}
+
+// Dark mode.
+.dark-mode {
+	form {
+		input[type="text"],
+		input[type="email"],
+		input[type="url"],
+		textarea,
+		select {
+			border: var( --cfe-form-element--border--dark );
+		}
+	}
+	.form-control,
+	.custom-select,
+	.form-range-value,
+	.upload-album-empty   {
+		border: var( --cfe-form-element--border--dark );
+	}
+	.tab-pane {
+		.image-select-list {
+			li {
+				border: var( --cfe-form-element--border--dark );
+			}
+		}
+		.image-upload-list {
+			img {
+				border: var( --cfe-form-element--border--dark );
+			}
+		}
+	}
+	.dz-image {
+		img {
+			border: var( --cfe-form-element--border--dark );
 		}
 	}
 }
