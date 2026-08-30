@@ -22,6 +22,8 @@ if ( defined( 'DEBUG_MODE' ) && DEBUG_MODE ) {
 
 ?>
 <head data-admin-head>
+	<!-- Always keep a cool head. -->
+
 	<title><?php echo $layout['title']; ?></title>
 
 	<meta charset="<?php echo CHARSET; ?>">
