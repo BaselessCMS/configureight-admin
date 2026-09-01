@@ -25,13 +25,19 @@
 	word-spacing: var( --cfe-button--word-spacing, normal );
 	text-decoration: var( --cfe-button--text-decoration, none );
 	background-color: var( --cfe-button--bg-color, var( --cfe-body--bg-color, inherit ) );
-	border: solid 1px var( --cfe-button--border-color, #555555 );
+	border: solid 1px var( --cfe-button--border-color, var( --cfe-box--border-color ) );
 	color: var( --cfe-button--text-color, var( --cfe-text-color, #333333 ) );
 	transition: var( --cfe-button--transition, all 0.15s ease-in-out );
 	cursor: var( --cfe-button--cursor, pointer );;
 
 	@media ( prefers-reduced-motion: reduce ) {
 		transition: none;
+	}
+
+	@media ( prefers-color-scheme: dark ) {
+		background-color: var( --cfe-button--bg-color--dark, var( --cfe-body--bg-color--dark ) );
+		border-color: var( --cfe-button--border-color--dark, var( --cfe-box--border-color--dark ) );
+		color: var( --cfe-button--text-color--dark, var( --cfe-body--text-color--dark ) );
 	}
 
 	&:hover,
@@ -80,6 +86,22 @@
 
 		&:hover {
 			background-color: #ff0000;
+		}
+	}
+}
+
+.dark-mode {
+	.btn,
+	.button {
+		background-color: var( --cfe-button--bg-color--dark, var( --cfe-body--bg-color--dark ) );
+		border-color: var( --cfe-button--border-color--dark, var( --cfe-box--border-color--dark ) );
+		color: var( --cfe-button--text-color--dark, var( --cfe-body--text-color--dark ) );
+
+		&:hover,
+		&:focus {
+			background-color: var( --cfe-button--action--bg-color--dark, var( --cfe-button--bg-color--dark ) );
+			border-color: var( --cfe-button--action--border-color--dark, var( --cfe-button--border-color--dark, ) );
+			color: var( --cfe-button--action--text-color--dark, var( --cfe-button--text-color--dark ) );
 		}
 	}
 }
@@ -168,5 +190,18 @@ fieldset:disabled a.btn {
 		width: var( --cfe-to-top--svg--width, 1.5rem );
 		height: var( --cfe-to-top--svg--height, 1.5rem );
 		fill: var( --cfe-to-top--svg--fill, currentColor );
+	}
+}
+.dark-mode {
+	#to-top {
+		background-color: var( --cfe-button--bg-color--dark );
+		border-color: var( --cfe-button--border-color--dark, var( --cfe-form--border-color--dark ) );
+		color: var( --cfe-to-top--text-color--dark, var( --cfe-button--text-color--dark ) );
+
+		&:hover {
+			background-color: var( --cfe-to-top--action--bg-color--dark, var( --cfe-button--action--bg-color--dark, var( --cfe-button--bg-color--dark ) ) );
+			border-color: var( --cfe-to-top--action--border-color--dark, var( --cfe-button--action--border-color--dark, var( --cfe-button--border-color--dark ) ) );
+			color: var( --cfe-to-top--action--text-color--dark, var( --cfe-button--action--text-color--dark ) );
+		}
 	}
 }

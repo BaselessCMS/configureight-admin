@@ -629,37 +629,74 @@ code {
 
 // Text selection.
 ::-o-selection {
-	color: var( --cfe-selection--text-color, $near_black );
-	background: var( --cfe-selection--bg-color, $yellow );
+	color: var( --cfe-selection--text-color );
+	background: var( --cfe-selection--bg-color );
 	text-shadow: none;
 
-	@media ( prefers-color-scheme: dark ) {}
+	@media ( prefers-color-scheme: dark ) {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
 }
 ::-ms-selection {
-	color: var( --cfe-selection--text-color, $near_black );
-	background: var( --cfe-selection--bg-color, $yellow );
+	color: var( --cfe-selection--text-color );
+	background: var( --cfe-selection--bg-color );
 	text-shadow: none;
 
-	@media ( prefers-color-scheme: dark ) {}
+	@media ( prefers-color-scheme: dark ) {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
 }
 ::-webkit-selection {
-	color: var( --cfe-selection--text-color, $near_black );
-	background: var( --cfe-selection--bg-color, $yellow );
+	color: var( --cfe-selection--text-color );
+	background: var( --cfe-selection--bg-color );
 	text-shadow: none;
 
-	@media ( prefers-color-scheme: dark ) {}
+	@media ( prefers-color-scheme: dark ) {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
 }
 ::-moz-selection {
-	color: var( --cfe-selection--text-color, $near_black );
-	background: var( --cfe-selection--bg-color, $yellow );
+	color: var( --cfe-selection--text-color );
+	background: var( --cfe-selection--bg-color );
 	text-shadow: none;
 
-	@media ( prefers-color-scheme: dark ) {}
+	@media ( prefers-color-scheme: dark ) {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
 }
 ::selection {
-	color: var( --cfe-selection--text-color, $near_black );
-	background: var( --cfe-selection--bg-color, $yellow );
+	color: var( --cfe-selection--text-color );
+	background: var( --cfe-selection--bg-color );
 	text-shadow: none;
 
-	@media ( prefers-color-scheme: dark ) {}
+	@media ( prefers-color-scheme: dark ) {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
+}
+.dak-mode {
+	::-o-selection {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
+	::-ms-selection {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
+	::-webkit-selection {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
+	::-moz-selection {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
+	::selection {
+		color: var( --cfe-selection--text-color--dark );
+		background: var( --cfe-selection--bg-color--dark );
+	}
 }

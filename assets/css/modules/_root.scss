@@ -88,7 +88,13 @@ $color_six_dark:   $medium_gray;
 	--cfe-body--bg-color--dark: var( --cfe-scheme-color--body--dark );
 	--cfe-body--text-color: var( --cfe-scheme-color--text );
 	--cfe-body--text-color--dark: var( --cfe-scheme-color--text--dark );
+
 	--cfe-text-shadow: 0.05em 0.05em 0.05em #{rgba( $color: black, $alpha: 0.625 )};
+
+	--cfe-selection--text-color: var( --cfe-button--text-color );
+	--cfe-selection--bg-color: var( --cfe-button--bg-color );
+	--cfe-selection--text-color--dark: var( --cfe-button--text-color--dark );
+	--cfe-selection--bg-color--dark: var( --cfe-button--bg-color--dark );
 
 	// Links.
 	--cfe-link--text-decoration: underline;
