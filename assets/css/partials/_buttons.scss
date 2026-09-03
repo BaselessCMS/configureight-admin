@@ -34,17 +34,24 @@
 		transition: none;
 	}
 
-	@media ( prefers-color-scheme: dark ) {
-		background-color: var( --cfe-button--bg-color--dark, var( --cfe-body--bg-color--dark ) );
-		border-color: var( --cfe-button--border-color--dark, var( --cfe-box--border-color--dark ) );
-		color: var( --cfe-button--text-color--dark, var( --cfe-body--text-color--dark ) );
-	}
-
 	&:hover,
 	&:focus {
 		background-color: var( --cfe-button--action--bg-color, #333333 );
 		border-color: var( --cfe-button--action--border-color, #555555 );
 		color: var( --cfe-button--action--text-color, #ffffff );
+	}
+
+	@media ( prefers-color-scheme: dark ) {
+		background-color: var( --cfe-button--bg-color--dark, var( --cfe-body--bg-color--dark ) );
+		border-color: var( --cfe-button--border-color--dark, var( --cfe-box--border-color--dark ) );
+		color: var( --cfe-button--text-color--dark, var( --cfe-body--text-color--dark ) );
+
+		&:hover,
+		&:focus {
+			background-color: var( --cfe-button--action--bg-color--dark, var( --cfe-button--bg-color--dark ) );
+			border-color: var( --cfe-button--action--border-color--dark, var( --cfe-button--border-color--dark, ) );
+			color: var( --cfe-button--action--text-color--dark, var( --cfe-button--text-color--dark ) );
+		}
 	}
 
 	&.disabled,
@@ -63,7 +70,8 @@
 		color: var( --cfe-button--primary--text-color, #ffffff );
 
 		@media ( prefers-color-scheme: dark ) {
-			background-color: var( --cfe-button--primary--bg-color--dark, var( --cfe-scheme-color--one ) );
+			background-color: var( --cfe-button--primary--bg-color--dark, var( --cfe-scheme-color--one--dark ) );
+			color: var( --cfe-button--primary--text-color--dark );
 		}
 
 		&:hover,
@@ -115,7 +123,8 @@
 
 		&.btn-primary,
 		&.button-primary {
-			background-color: var( --cfe-button--primary--bg-color--dark, var( --cfe-scheme-color--one ) );
+			background-color: var( --cfe-button--primary--bg-color--dark, var( --cfe-scheme-color--one--dark ) );
+			color: var( --cfe-button--primary--text-color--dark );
 
 			&:hover,
 			&:focus {

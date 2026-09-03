@@ -154,7 +154,7 @@
   --cfe-admin-menu--bg-color: var( --cfe-body--bg-color--dark );
   --cfe-admin--menu--link--action--bg-color: var( --cfe-scheme-color--three );
   --cfe-admin--menu--link--action--bg-color--dark: var( --cfe-scheme-color--three--dark );
-  --cfe-tabs--list--gap: 0.5rem 0.25rem;
+  --cfe-tabs--list--gap: 0 0.25rem;
   --cfe-tabs--list--margin: 2rem 0 0 0;
   --cfe-tabs--list--padding: 0 0.5rem;
   --cfe-tabs--list--border-bottom-style: solid;
@@ -2955,6 +2955,13 @@ select option:hover {
     transition: none;
   }
 }
+.btn:hover, .btn:focus,
+.button:hover,
+.button:focus {
+  background-color: var(--cfe-button--action--bg-color, #333333);
+  border-color: var(--cfe-button--action--border-color, #555555);
+  color: var(--cfe-button--action--text-color, #ffffff);
+}
 @media (prefers-color-scheme: dark) {
   .btn,
   .button {
@@ -2962,13 +2969,13 @@ select option:hover {
     border-color: var(--cfe-button--border-color--dark, var(--cfe-box--border-color--dark));
     color: var(--cfe-button--text-color--dark, var(--cfe-body--text-color--dark));
   }
-}
-.btn:hover, .btn:focus,
-.button:hover,
-.button:focus {
-  background-color: var(--cfe-button--action--bg-color, #333333);
-  border-color: var(--cfe-button--action--border-color, #555555);
-  color: var(--cfe-button--action--text-color, #ffffff);
+  .btn:hover, .btn:focus,
+  .button:hover,
+  .button:focus {
+    background-color: var(--cfe-button--action--bg-color--dark, var(--cfe-button--bg-color--dark));
+    border-color: var(--cfe-button--action--border-color--dark, var(--cfe-button--border-color--dark, ));
+    color: var(--cfe-button--action--text-color--dark, var(--cfe-button--text-color--dark));
+  }
 }
 .btn.disabled, .btn:disabled, .btn.btn-link:disabled, .btn.btn-link.disabled,
 .button.disabled,
@@ -2990,7 +2997,8 @@ select option:hover {
   .btn.btn-primary, .btn.button-primary,
   .button.btn-primary,
   .button.button-primary {
-    background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one));
+    background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one--dark));
+    color: var(--cfe-button--primary--text-color--dark);
   }
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.button-primary:hover, .btn.button-primary:focus,
@@ -3048,7 +3056,8 @@ select option:hover {
 .dark-mode .btn.btn-primary, .dark-mode .btn.button-primary,
 .dark-mode .button.btn-primary,
 .dark-mode .button.button-primary {
-  background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one));
+  background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one--dark));
+  color: var(--cfe-button--primary--text-color--dark);
 }
 .dark-mode .btn.btn-primary:hover, .dark-mode .btn.btn-primary:focus, .dark-mode .btn.button-primary:hover, .dark-mode .btn.button-primary:focus,
 .dark-mode .button.btn-primary:hover,
