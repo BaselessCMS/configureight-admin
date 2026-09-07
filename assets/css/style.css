@@ -6407,6 +6407,21 @@ fieldset:disabled a.btn {
   max-height: 24px;
 }
 
+.dark-mode div.sidebar {
+  background-color: var(--cfe-admin-menu--bg-color--dark, #1e1e1e);
+}
+.dark-mode .user-toolbar ul li a:hover, .dark-mode .user-toolbar ul li a:focus {
+  color: var(--cfe-admin--menu--link--action--text-color--dark, #ffffff);
+}
+.dark-mode .user-toolbar ul ul li a {
+  background-color: var(--cfe-toolbar--submenu--link--bg-color--dark, inherit);
+  color: var(--cfe-toolbar--submenu--link--text-color--dark, inherit);
+}
+.dark-mode .user-toolbar ul ul li a:hover, .dark-mode .user-toolbar ul ul li a:focus {
+  background-color: var(--cfe-toolbar--submenu--link--action--bg-color--dark, inherit);
+  color: var(--cfe-toolbar--submenu--link--action--text-color--dark, inherit);
+}
+
 #admin-content {
   position: relative;
 }
