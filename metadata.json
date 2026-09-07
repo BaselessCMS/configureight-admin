@@ -1,11 +1,11 @@
 {
-	"author"      : "Bludiot",
-	"email"       : "santa@north.pole",
-	"website"     : "https://github.com/Bludiot/configureight-admin",
+	"author"      : "Baseless CMS",
+	"email"       : "",
+	"website"     : "https://baselesscms.github.io/pages/",
 	"version"     : "1.0.0",
 	"releaseDate" : "",
 	"license"     : "Nope",
-	"compatible"  : "3.15.0",
+	"compatible"  : "3.22.0",
 	"notes"       : "An admin theme for Bludit CMS, designed as part of the Configure 8 theme-plugin suite.",
 	"theme"       : "configureight",
 	"plugin"      : "configureight-plugin"
