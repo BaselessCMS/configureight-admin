@@ -393,6 +393,12 @@
 	div.sidebar {
 		background-color: var( --cfe-admin-menu--bg-color--dark, $near_black );
 	}
+	.admin-menu .admin-menu-list li a.current-link,
+	.admin-menu .admin-menu-list li a:hover,
+	.admin-menu .admin-menu-list li a:focus {
+		background-color: var( --cfe-admin--menu--link--action--bg-color--dark );
+		color: var( --cfe-admin--menu--link--action--text-color--dark, #ffffff );
+	}
 	.user-toolbar ul li a {
 		&:hover,
 		&:focus {

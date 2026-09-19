@@ -6410,6 +6410,12 @@ fieldset:disabled a.btn {
 .dark-mode div.sidebar {
   background-color: var(--cfe-admin-menu--bg-color--dark, #1e1e1e);
 }
+.dark-mode .admin-menu .admin-menu-list li a.current-link,
+.dark-mode .admin-menu .admin-menu-list li a:hover,
+.dark-mode .admin-menu .admin-menu-list li a:focus {
+  background-color: var(--cfe-admin--menu--link--action--bg-color--dark);
+  color: var(--cfe-admin--menu--link--action--text-color--dark, #ffffff);
+}
 .dark-mode .user-toolbar ul li a:hover, .dark-mode .user-toolbar ul li a:focus {
   color: var(--cfe-admin--menu--link--action--text-color--dark, #ffffff);
 }
@@ -7235,7 +7241,6 @@ img.profilePicture {
 }
 
 .tab-content .tab-pane {
-  display: none;
   padding: var(--cfe-tabs--content--pane--padding, 1rem 0 0 0);
 }
 .tab-content .tab-pane.active {
@@ -7243,6 +7248,10 @@ img.profilePicture {
 }
 .tab-content .tab-pane .text-uppercase {
   text-transform: none !important;
+}
+
+#jseditorSidebar .tab-content .tab-pane:not(.active) {
+  display: none;
 }
 
 .modal-open {

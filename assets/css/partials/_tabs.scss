@@ -143,7 +143,6 @@
 .tab-content {
 
 	.tab-pane {
-		display: none;
 		padding: var( --cfe-tabs--content--pane--padding, 1rem 0 0 0 );
 
 		&.active {
@@ -154,4 +153,8 @@
 			text-transform: none !important;
 		}
 	}
+}
+
+#jseditorSidebar .tab-content .tab-pane:not( .active ) {
+	display: none;
 }
