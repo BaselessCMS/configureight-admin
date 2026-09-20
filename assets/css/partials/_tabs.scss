@@ -155,6 +155,16 @@
 	}
 }
 
+body:not( .admin-page-configure-plugin ):not( .admin-page-plugin ) {
+	.tab-content {
+		.tab-pane {
+			&:not( .active ) {
+				display: none;
+			}
+		}
+	}
+}
+
 #jseditorSidebar .tab-content .tab-pane:not( .active ) {
 	display: none;
 }
