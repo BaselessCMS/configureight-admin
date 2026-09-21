@@ -135,15 +135,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, fieldset, table, pre {
 a {
 	display: var( --cfe-link--display );
 	position: var( --cfe-link--position );
-	font-size: var( --cfe-link--font-size, inherit );
-	font-weight: var( --cfe-link--font-weight, inherit );
-	font-style: var( --cfe-link--font-style, inherit );
-	font-variant: var( --cfe-link--font-variant, inherit );
+	font-size: var( --cfe-link--font-size, var( --cfe-body--font-size ) );
+	font-weight: var( --cfe-link--font-weight, var( --cfe-body--font-weight ) );
+	font-style: var( --cfe-link--font-style, var( --cfe-body--font-style ) );
+	font-variant: var( --cfe-link--font-variant, var( --cfe-body--font-variant ) );
 	text-decoration: var( --cfe-link--text-decoration );
 	text-underline-offset: var( --cfe-link--text-underline-offset );
-	text-transform: var( --cfe-link--text-transform, inherit );
-	letter-spacing: var( --cfe-link--letter-spacing, inherit );
-	word-spacing: var( --cfe-link--word-spacing, inherit );
+	text-transform: var( --cfe-link--text-transform, var( --cfe-body--text-transform ) );
+	letter-spacing: var( --cfe-link--letter-spacing, var( --cfe-body--letter-spacing ) );
+	word-spacing: var( --cfe-link--word-spacing, var( --cfe-body--word-spacing ) );
 	color: var( --cfe-link--text-color );
 	transition: var( --cfe-link--transition, all 0.15s );
 
