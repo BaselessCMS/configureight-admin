@@ -11,7 +11,8 @@
 use function CFE_Admin_Theme\{
 	plugin,
 	is_rtl,
-	body_classes
+	body_classes,
+	admin_footer
 };
 
 global $layout;
@@ -91,6 +92,9 @@ include( 'views/alert.php' ); ?>
 				echo '<h2 class="text-center">' . $L->g( 'Choose a page from the menu.' ) . '</h2>';
 			}
 		?>
+		<?php if ( admin_footer() ) {
+			echo admin_footer();
+		} ?>
 		</div>
 	</div>
 </div>

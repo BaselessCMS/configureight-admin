@@ -28,6 +28,21 @@ if ( ! class_exists( 'Bootstrap' ) ) {
 }
 
 /**
+ * Site class object
+ *
+ * Function to use inside other functions and
+ * methods rather than calling the global.
+ *
+ * @since  1.0.0
+ * @global object $site Site class
+ * @return object
+ */
+function site() {
+	global $site;
+	return $site;
+}
+
+/**
  * Constant: plugin class
  *
  * The class of the companion plugin.
@@ -350,4 +365,31 @@ function menu_link( $slug = '', $icon = '', $classes = '', $title = false ) {
 		}
 	}
 	echo $tag;
+}
+
+/**
+ * Footer text
+ *
+ * @since  1.0.0
+ * @return void
+ */
+function admin_footer() {
+
+	$themes = buildThemes();
+	$text   = false;
+
+	foreach ( $themes as $theme ) {
+
+		if ( $theme['dirname'] !== site()->theme() ) {
+			continue;
+		}
+		if ( ! isset( $theme['admin_footer'] ) ) {
+			continue;
+		}
+
+		if ( ! empty( $theme['admin_footer'] ) && ! ctype_space( $theme['admin_footer'] ) ) {
+			$text = $theme['admin_footer'];
+		}
+		return $text;
+	}
 }
