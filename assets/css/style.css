@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, fieldset, table, pre {
 a {
   display: var(--cfe-link--display);
   position: var(--cfe-link--position);
-  font-size: var(--cfe-link--font-size, var(--cfe-body--font-size));
+  font-size: inherit;
   font-weight: var(--cfe-link--font-weight, var(--cfe-body--font-weight));
   font-style: var(--cfe-link--font-style, var(--cfe-body--font-style));
   font-variant: var(--cfe-link--font-variant, var(--cfe-body--font-variant));
