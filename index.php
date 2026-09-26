@@ -53,7 +53,7 @@ if ( plugin() && 'configureight' == plugin()->className() ) {
 
 <?php include( 'views/head.php' ); ?>
 
-<body class="<?php body_classes(); ?>">
+<body class="cfe-admin <?php body_classes(); ?>">
 
 <?php Theme :: plugins( 'adminBodyBegin' ); ?>
 
