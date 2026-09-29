@@ -477,7 +477,7 @@ body {
   letter-spacing: var(--cfe-body--letter-spacing, normal);
   word-spacing: var(--cfe-body--word-spacing, normal);
   line-height: var(--cfe-body--line-height, 1.5);
-  background-color: var(--cfe-body--bg-color);
+  background-color: var(--cfe-admin--body--bg-color, var(--cfe-body--bg-color));
   background-image: var(--cfe-body--bg-image);
   background-repeat: var(--cfe-body--bg-repeat);
   background-position: var(--cfe-body--bg-position);
@@ -4793,6 +4793,19 @@ form .multi-check-wrap label {
 form .multi-check-wrap label input {
   cursor: pointer;
 }
+form .radio-buttons-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em 1em;
+}
+form .radio-buttons-wrap label {
+  margin: 0 !important;
+  display: inline-block;
+  cursor: pointer;
+}
+form .radio-buttons-wrap label input {
+  cursor: pointer;
+}
 
 select optgroup {
   background-color: var(--cfe-body--bg-color) !important;
@@ -7499,4 +7512,8 @@ body:not(.admin-page-configure-plugin):not(.admin-page-plugin) .tab-content .tab
 }
 #jsmediaManagerModal td.information div:last-of-type a:last-of-type {
   color: #dd0000;
+}
+
+.toolbar-active .tox .tox-dialog-wrap {
+  top: var(--cfe-toolbar--height, 1rem);
 }
