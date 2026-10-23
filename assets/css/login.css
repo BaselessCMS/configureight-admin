@@ -1155,7 +1155,7 @@ form .col-sm-1, form .col-sm-2, form .col-sm-3, form .col-sm-4, form .col-sm-5, 
   max-width: 640px;
   padding: var(--cfe-form-element--padding);
   background-clip: padding-box;
-  background-color: var(--cfe-body--bg-color);
+  background-color: transparent;
   color: var(--cfe-body--text-color);
   border: var(--cfe-form-element--border);
   border-radius: 0px;
@@ -1163,7 +1163,7 @@ form .col-sm-1, form .col-sm-2, form .col-sm-3, form .col-sm-4, form .col-sm-5, 
 }
 @media (prefers-color-scheme: dark) {
   .form-control {
-    background-color: var(--cfe-body--bg-color--dark);
+    background-color: transparent;
     color: var(--cfe-body--text-color--dark);
     border: var(--cfe-form-element--border--dark);
   }
@@ -1201,16 +1201,6 @@ input[type=month].form-control {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-}
-
-select.form-control:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #555555;
-}
-
-select.form-control:focus::-ms-value {
-  color: #555555;
-  background-color: #ffffff;
 }
 
 .form-control-file,
@@ -1951,13 +1941,13 @@ textarea.form-control.is-invalid {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: var(--cfe-body--bg-color);
+  background-color: transparent;
   color: var(--cfe-body--text-color);
 }
 @media (prefers-color-scheme: dark) {
   .custom-select {
     border: var(--cfe-form-element--border--dark);
-    background-color: var(--cfe-body--bg-color--dark);
+    background-color: transparent;
     color: var(--cfe-body--text-color--dark);
   }
 }
@@ -2537,12 +2527,12 @@ p + .multi-check-wrap {
   gap: 0.5rem 0.25rem;
 }
 
-#form-color-thumbs-list {
+.form-color-thumbs-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#form-color-thumbs-list ul {
+.form-color-thumbs-list ul {
   list-style: none;
   margin: 0.5em 0 0 0;
   padding: 0;
@@ -2550,7 +2540,7 @@ p + .multi-check-wrap {
   flex-wrap: nowrap;
   gap: 0.25rem;
 }
-#form-color-thumbs-list ul li {
+.form-color-thumbs-list ul li {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -2560,7 +2550,7 @@ p + .multi-check-wrap {
   border-radius: 50%;
 }
 
-.dark-mode #form-color-thumbs-list ul li {
+.dark-mode .form-color-thumbs-list ul li {
   border: var(--cfe-form-element--border--dark);
 }
 
@@ -2608,7 +2598,7 @@ form select {
   width: 100%;
   padding: var(--cfe-form-element--padding);
   background-clip: padding-box;
-  background-color: var(--cfe-body--bg-color);
+  background-color: transparent;
   color: var(--cfe-body--text-color);
   border: var(--cfe-form-element--border);
   border-radius: 0px;
@@ -2620,7 +2610,7 @@ form select {
   form input[type=url],
   form textarea,
   form select {
-    background-color: var(--cfe-body--bg-color--dark);
+    background-color: transparent;
     color: var(--cfe-body--text-color--dark);
     border: var(--cfe-form-element--border--dark);
   }
@@ -2664,19 +2654,19 @@ form .radio-buttons-wrap label input {
 }
 
 select optgroup {
-  background-color: var(--cfe-body--bg-color) !important;
+  background-color: transparent !important;
 }
 @media (prefers-color-scheme: dark) {
   select optgroup {
-    background-color: var(--cfe-body--bg-color--dark) !important;
+    background-color: transparent !important;
   }
 }
 select option {
-  background-color: var(--cfe-body--bg-color) !important;
+  background-color: transparent !important;
 }
 @media (prefers-color-scheme: dark) {
   select option {
-    background-color: var(--cfe-body--bg-color--dark) !important;
+    background-color: transparent !important;
   }
 }
 select option:hover {

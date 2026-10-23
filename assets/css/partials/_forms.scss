@@ -14,14 +14,14 @@ form {
 	max-width: 640px;
 	padding: var( --cfe-form-element--padding );
 	background-clip: padding-box;
-	background-color: var( --cfe-body--bg-color );
+	background-color: transparent;
 	color: var( --cfe-body--text-color );
 	border: var( --cfe-form-element--border );
 	border-radius: 0px;
 	transition: all 0.25s ease-in-out;
 
 	@media ( prefers-color-scheme: dark ) {
-		background-color: var( --cfe-body--bg-color--dark );
+		background-color: transparent;
 		color: var( --cfe-body--text-color--dark );
 		border: var( --cfe-form-element--border--dark );
 	}
@@ -74,16 +74,6 @@ input[type="time"].form-control,
 input[type="datetime-local"].form-control,
 input[type="month"].form-control {
 	appearance: none;
-}
-
-select.form-control:-moz-focusring {
-	color: transparent;
-	text-shadow: 0 0 0 $medium_gray;
-}
-
-select.form-control:focus::-ms-value {
-	color: $medium_gray;
-	background-color: $white;
 }
 
 .form-control-file,
@@ -890,12 +880,12 @@ border-bottom-right-radius: 0;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background-color: var( --cfe-body--bg-color );
+	background-color: transparent;
 	color: var( --cfe-body--text-color );
 
 	@media ( prefers-color-scheme: dark ) {
 		border: var( --cfe-form-element--border--dark );
-		background-color: var( --cfe-body--bg-color--dark );
+		background-color: transparent;
 		color: var( --cfe-body--text-color--dark );
 	}
 }
@@ -1507,7 +1497,7 @@ p + .multi-check-wrap {
 }
 
 // Color fields.
-#form-color-thumbs-list {
+.form-color-thumbs-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1532,7 +1522,7 @@ p + .multi-check-wrap {
 	}
 }
 .dark-mode {
-	#form-color-thumbs-list ul li {
+	.form-color-thumbs-list ul li {
 		border: var( --cfe-form-element--border--dark );
 	}
 }
@@ -1589,14 +1579,14 @@ form {
 		// height: calc(1.5em + 0.75rem + 2px);
 		padding: var( --cfe-form-element--padding );
 		background-clip: padding-box;
-		background-color: var( --cfe-body--bg-color );
+		background-color: transparent;
 		color: var( --cfe-body--text-color );
 		border: var( --cfe-form-element--border );
 		border-radius: 0px;
 		transition: all 0.25s ease-in-out;
 
 		@media ( prefers-color-scheme: dark ) {
-			background-color: var( --cfe-body--bg-color--dark );
+			background-color: transparent;
 			color: var( --cfe-body--text-color--dark );
 			border: var( --cfe-form-element--border--dark );
 		}
@@ -1649,16 +1639,16 @@ form {
 
 select {
 	optgroup {
-		background-color: var( --cfe-body--bg-color ) !important;
+		background-color: transparent !important;
 		@media ( prefers-color-scheme: dark ) {
-			background-color: var( --cfe-body--bg-color--dark ) !important;
+			background-color: transparent !important;
 		}
 	}
 
 	option {
-		background-color: var( --cfe-body--bg-color ) !important;
+		background-color: transparent !important;
 		@media ( prefers-color-scheme: dark ) {
-			background-color: var( --cfe-body--bg-color--dark ) !important;
+			background-color: transparent !important;
 		}
 
 		&:hover {
