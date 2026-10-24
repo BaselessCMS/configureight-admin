@@ -2534,8 +2534,8 @@ p + .multi-check-wrap {
 }
 .form-color-thumbs-list ul {
   list-style: none;
-  margin: 0.25em 0 0 0;
-  padding: 0;
+  margin: 0.25em 0 0 0 !important;
+  padding: 0 !important;
   display: flex;
   flex-wrap: nowrap;
   gap: 0.25rem;
@@ -2993,14 +2993,14 @@ select option:hover {
 .btn.btn-primary, .btn.button-primary,
 .button.btn-primary,
 .button.button-primary {
-  background-color: var(--cfe-button--primary--bg-color, var(--cfe-link--text-color));
+  background-color: var(--cfe-button--primary--bg-color, var(--cfe-scheme-color--four));
   color: var(--cfe-button--primary--text-color, #ffffff);
 }
 @media (prefers-color-scheme: dark) {
   .btn.btn-primary, .btn.button-primary,
   .button.btn-primary,
   .button.button-primary {
-    background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one--dark));
+    background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--four--dark));
     color: var(--cfe-button--primary--text-color--dark);
   }
 }
@@ -3009,7 +3009,7 @@ select option:hover {
 .button.btn-primary:focus,
 .button.button-primary:hover,
 .button.button-primary:focus {
-  background-color: var(--cfe-button--primary--action--bg-color, var(--cfe-link--action--text-color));
+  background-color: var(--cfe-button--primary--action--bg-color, var(--cfe-scheme-color--three));
   color: var(--cfe-button--primary--action--text-color, #ffffff);
 }
 @media (prefers-color-scheme: dark) {
@@ -3018,7 +3018,7 @@ select option:hover {
   .button.btn-primary:focus,
   .button.button-primary:hover,
   .button.button-primary:focus {
-    background-color: var(--cfe-button--primary--action--bg-color--dark, var(--cfe-scheme-color--two--dark));
+    background-color: var(--cfe-button--primary--action--bg-color--dark, var(--cfe-scheme-color--three--dark));
     color: var(--cfe-button--primary--action--text-color--dark, #ffffff);
   }
 }
@@ -3059,7 +3059,7 @@ select option:hover {
 .dark-mode .btn.btn-primary, .dark-mode .btn.button-primary,
 .dark-mode .button.btn-primary,
 .dark-mode .button.button-primary {
-  background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--one--dark));
+  background-color: var(--cfe-button--primary--bg-color--dark, var(--cfe-scheme-color--four--dark));
   color: var(--cfe-button--primary--text-color--dark);
 }
 .dark-mode .btn.btn-primary:hover, .dark-mode .btn.btn-primary:focus, .dark-mode .btn.button-primary:hover, .dark-mode .btn.button-primary:focus,
@@ -3067,7 +3067,7 @@ select option:hover {
 .dark-mode .button.btn-primary:focus,
 .dark-mode .button.button-primary:hover,
 .dark-mode .button.button-primary:focus {
-  background-color: var(--cfe-button--primary--action--bg-color--dark, var(--cfe-scheme-color--two--dark));
+  background-color: var(--cfe-button--primary--action--bg-color--dark, var(--cfe-scheme-color--three--dark));
   color: var(--cfe-button--primary--action--text-color--dark, #ffffff);
 }
 
