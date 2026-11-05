@@ -1,6 +1,6 @@
 # Configure 8 Admin
 
-Bludit admin theme companion to the Configure 8 theme.
+Bludit admin theme that is a companion to the Configure 8 theme.
 
 ![Tested up to Bludit version 3.16.2](https://img.shields.io/badge/Bludit-3.16.2-e6522c.svg?style=flat-square "Tested up to Bludit version 3.16.2")
 ![Minimum PHP version is 7.4](https://img.shields.io/badge/PHP_Min-7.4-8892bf.svg?style=flat-square "Minimum PHP version is 7.4")
