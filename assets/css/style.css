@@ -4843,6 +4843,9 @@ select option:hover {
 .scheme-color-pickers .form-group {
   margin: 0.5rem 0;
 }
+.scheme-color-pickers .form-group:first-of-type {
+  margin-top: 1rem;
+}
 
 .upload-album-empty {
   width: 100%;

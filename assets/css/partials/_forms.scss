@@ -1681,6 +1681,10 @@ select {
 .scheme-color-pickers {
 	.form-group {
 		margin: 0.5rem 0;
+
+		&:first-of-type {
+			margin-top: 1rem;
+		}
 	}
 }
 
