@@ -2696,6 +2696,10 @@ select option:hover {
   color: var(--cfe-scheme-color--text--dark);
 }
 
+.scheme-color-pickers .form-group {
+  margin: 0.5rem 0;
+}
+
 .upload-album-empty {
   width: 100%;
   min-height: 160px;
